@@ -1,9 +1,15 @@
-from airflow import DAG
+# -*- coding: utf-8 -*-
+
+__author__ = 'Samir Adrik'
+__email__ = 'samir.adrik@gmail.com'
+
+
 from airflow.providers.postgres.operators.postgres import PostgresOperator
-from airflow.providers.http.sensors.http import HttpSensor
 from airflow.providers.http.operators.http import SimpleHttpOperator
-from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
+from airflow.providers.http.sensors.http import HttpSensor
+from airflow.operators.python import PythonOperator
+from airflow import DAG
 
 import json
 
