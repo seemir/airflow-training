@@ -163,5 +163,3 @@ logs
 
 # Airflow stuff
 airflow.db
-airflow.cfg
-webserver_config.py
